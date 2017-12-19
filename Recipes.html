@@ -1,11 +1,143 @@
 ﻿<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+
+
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>Search Recipes</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <style>.edit {
+    float: right;
+} 
+    .panel-heading{
+        padding: 15px;
+    }
+    
+    </style>
+
 </head>
+
+
 <body>
 
+    <div class="container">
+
+
+        <h1>Search Recipes</h1>
+
+        <!--Search recipes FORM-->
+        <form>
+            <div class="form-group row col-sm-10">
+                <label for="Search Recipes" class="col-sm-2 col-form-label">Search:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" placeholder="Tap to search recipes...">
+                </div>
+            </div>
+        </form>
+
+        <!--Add additional recipes BUTTON-->
+        <button type="button" class="btn btn-primary col-sm-2">ADD</button>
+       
+      
+        <!--Recipes listed ACCORDION-->
+        <div class="panel-group col-sm-12" id="accordion">
+
+            <!--Recipe1-->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <button type="button" class="btn edit">
+                        <span class="glyphicon glyphicon-pencil"></span> Edit
+                    </button>
+                    <button type="button" class="btn edit">
+                    <span class="glyphicon glyphicon-remove"></span> Remove
+                </button>
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                            Ham and Cheese
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapse1" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <ul> Ingredients
+                            <li class="alert-danger">Ham</li>
+                            <li>Bread</li>
+                            <li>Cheese</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!--Recipe2-->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <button type="button" class="btn edit">
+                        <span class="glyphicon glyphicon-pencil"></span> Edit
+                    </button>
+                    <button type="button" class="btn edit">
+                        <span class="glyphicon glyphicon-remove"></span> Remove
+                    </button>
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                            Chicken Wrap
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapse2" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <ul>
+                            Ingredients
+                            <li>Wrap</li>
+                            <li>Chicken</li>
+                            <li>Lettuce</li>
+                            <li>Mayonnaise</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!--Recipe3-->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <button type="button" class="btn edit">
+                        <span class="glyphicon glyphicon-pencil"></span> Edit
+                    </button>
+                    <button type="button" class="btn edit">
+                        <span class="glyphicon glyphicon-remove"></span> Remove
+                    </button>
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                            Beef Crunch Wrap
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapse3" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <ul>
+                            Ingredients
+                            <li>Beef strips</li>
+                            <li>BBQ sauce</li>
+                            <li>Cheese</li>
+                            <li>Wrap</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--END ACCORDION-->
+
+    </div>
 </body>
+
 </html>
