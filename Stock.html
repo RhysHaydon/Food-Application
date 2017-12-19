@@ -4,8 +4,87 @@
 <head>
     <meta charset="utf-8" />
     <title></title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS.css" />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <script src="Javascript.js"></script>
+    <script src="tablesorter/jquery.tablesorter.js"></script>
 </head>
+
 <body>
+
+    <div class="container">
+
+        <h1>STOCK</h1>
+
+        <div class="col-xs-4" id="stock--search">
+            <input class="form-control" id="stock--input" type="text" placeholder="Search..." />
+        </div>
+
+        <div id="stock-buttons">
+            <button type="button" class="btn btn-default filter protein">Protein</button>
+            <button type="button" class="btn btn-default filter base">Base</button>
+            <button type="button" class="btn btn-default filter condiment">Condiment</button>
+            <button type="button" class="btn btn-default filter salad">Salad</button>
+            <button type="button" class="btn btn-default filter vegetable">Vegetable</button>
+            <button type="button" class="btn btn-default filter drink">Drink</button>
+            <button type="button" class="btn btn-default reset btn-info">Reset</button>
+        </div>
+
+        
+       
+        <table class="table table-striped table-responsive tablesorter" id="stock-table">
+            <thead>
+                <tr>
+                    <th>Ingredient</th>
+                    <th>Type</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ham</td>
+                    <td>Protein</td>
+                    <td>4</td>
+                    <td>4.00</td>
+                </tr>
+                <tr>
+                    <td>Cheese</td>
+                    <td>Condiment</td>
+                    <td>28</td>
+                    <td>8.50</td>
+                </tr>
+                <tr>
+                    <td>Bread</td>
+                    <td>Base</td>
+                    <td>16</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Butter</td>
+                    <td>Spread</td>
+                    <td>1</td>
+                    <td>2</td>
+                </tr>
+            </tbody>
+
+
+
+        </table>
+
+    </div>
+
+
+
 
 </body>
 </html>
